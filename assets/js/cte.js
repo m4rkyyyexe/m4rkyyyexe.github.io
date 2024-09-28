@@ -1,5 +1,5 @@
 var audio = new Audio('assets/other/bgm.mp3');
-audio.volume = 0.3;
+audio.volume = 0.2;
 audio.loop = true;
 
 var typed;
