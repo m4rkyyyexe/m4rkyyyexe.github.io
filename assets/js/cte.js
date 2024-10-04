@@ -1,11 +1,11 @@
 var audio = new Audio('assets/other/bgm.mp3');
-audio.volume = 0.2;
+audio.volume = 0.3;
 audio.loop = true;
 
 var typed;
 function startTyped() {
     typed = new Typed("#typed", {
-        strings: ["stinky l4d2 player", "editor and webdev", "hungarian 15 year old", "check my stuff down below"],
+        strings: ["stinky l4d2 player", "touhou is cool asf", "hungarian css hvh core", "check my stuff down below"],
         typeSpeed: 30,
         backSpeed: 5,
         backDelay: 1500,
