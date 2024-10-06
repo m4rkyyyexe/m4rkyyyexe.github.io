@@ -13,11 +13,19 @@ body {
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
-    transition: .2s;
+    animation: niggaballs .5s linear infinite;
 }
 
+/* kurvara unom az eletemet szoval nem fogok sajat rainbow gecit irni */
+@keyframes niggaballs {
+    0% { color: #f65555; }
+    25% { color: #a6f655; }
+    50% { color: #55f6f6; }
+    75% { color: #a655f6; }
+    100% { color: #f65555; }
+}
 
 img {
     border-radius: 50%;
