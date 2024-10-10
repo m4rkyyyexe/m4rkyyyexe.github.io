@@ -5,7 +5,7 @@ audio.loop = true;
 var typed;
 function startTyped() {
     typed = new Typed("#typed", {
-        strings: ["stinky l4d2 player", "touhou is cool asf", "hungarian css hvh core", "check my stuff down below"],
+        strings: ["stinky l4d2 player", "touhou is cool asf", "hungarian css hvh core", "christ is king"],
         typeSpeed: 30,
         backSpeed: 5,
         backDelay: 1500,
