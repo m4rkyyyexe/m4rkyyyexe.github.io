@@ -1,3 +1,23 @@
+.title, .cigany, .fos {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.show-content .title,
+.show-content .cigany,
+.show-content .fos {
+    opacity: 1;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -18,7 +38,6 @@ a {
     animation: niggaballs .5s linear infinite;
 }
 
-/* kurvara unom az eletemet szoval nem fogok sajat rainbow gecit irni */
 @keyframes niggaballs {
     0% { color: #f65555; }
     25% { color: #a6f655; }
@@ -89,7 +108,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.715);
+    background-color: rgba(0, 0, 0, 0.462);
     display: flex;
     justify-content: center;
     align-items: center;
