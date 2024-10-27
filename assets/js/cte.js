@@ -9,7 +9,7 @@ function startTyped() {
         typeSpeed: 30,
         backSpeed: 5,
         backDelay: 1500,
-        startDelay: 500,
+        startDelay: 600,
     });
 }
 
@@ -19,6 +19,10 @@ function removeoverlay() {
     document.body.classList.remove('no-scroll');
     audio.play();
     startTyped();
+
+    setTimeout(() => {
+        document.body.classList.add('show-content');
+    }, 300); 
 }
 
 document.addEventListener('DOMContentLoaded', function() {
