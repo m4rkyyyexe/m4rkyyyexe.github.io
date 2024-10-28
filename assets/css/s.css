@@ -132,7 +132,7 @@ body.no-scroll {
 .overlay h1 {
     background-color: #000;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     font-family: Source Code Pro, monospace;
     animation: popup 0.3s ease-in-out;
     font-weight: 400;
