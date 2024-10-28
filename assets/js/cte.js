@@ -5,7 +5,7 @@ audio.loop = true;
 var typed;
 function startTyped() {
     typed = new Typed("#typed", {
-        strings: ["i like icecream", "touhou is cool asf", "2k18 hvh core", "christ is king"],
+        strings: ["moving on from l4d2", "coding since 2022", "2k18 hvh core", "christ is king"],
         typeSpeed: 30,
         backSpeed: 5,
         backDelay: 1500,
