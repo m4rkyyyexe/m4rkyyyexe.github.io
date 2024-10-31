@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>mark @ gamesense</title>
+        <meta content="width:device-width, initial-scale=1" name="viewport">
+        <link rel="icon" type="image/x-icon" href="../static/assets/soul.png">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @keyframes rainbow {
+            0% {
+                color: red;
+            }
+            25% {
+                color: greenyellow;
+            }
+            50% {
+                color: cyan;
+            }
+            75% {
+                color: purple;
+            }
+            100% {
+                color: red;
+            }
+        }
+
+        body{
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            font-family: Montserrat;
+            user-select: none;
+            pointer-events: none;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        #cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 50px;
+        }
+    </style>
+    <body>
+        <div id="cont">
+        <h1>game<span style="animation: rainbow 10s linear infinite;">sense</span></h1>
+    </div>
+    </body>
+</html>
