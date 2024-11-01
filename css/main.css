@@ -36,10 +36,96 @@ body {
   user-select: none;
 }
 
-@keyframes popup {
-    0% { transform: scale(0); opacity: 0; }
-    80% { transform: scale(1.1); opacity: 1; }
-    100% { transform: scale(1); }
+@keyframes kurvanyad {
+  0% {
+    color: rgb(255, 0, 0);
+  }
+
+  25% {
+    color: rgb(128, 255, 0);
+  }
+
+  50% {
+    color: rgb(0, 255, 255);
+  }
+
+  75% {
+    color: rgb(128, 0, 255);
+  }
+
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
+
+.hatalmasfasz {
+  animation: kurvanyad 3s linear infinite;
+}
+
+#terminal-window {
+  width: 625px;
+  height: 320px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-family: 'Source Code Pro', monospace;
+  position: relative;
+  margin: 20px auto;
+  margin-bottom: 100px;
+}
+
+#terminal-window.visible {
+  opacity: 1;
+}
+
+#title-bar {
+  background-color: var(--cigany);
+  color: #fff;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  position: relative;
+}
+
+#title-bar #title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+#terminal {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 30px);
+}
+
+#output {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 13px;
+}
+
+#input-line {
+  display: flex;
+  padding: 8px;
+}
+
+#input-line input {
+  background-color: transparent;
+  border: none;
+  color: var(--textcolor);
+  font-size: 12px;
+  margin-left: 5px;
+  outline: none;
+  flex-grow: 1;
+  cursor: text;
 }
 
 ::-webkit-scrollbar {
@@ -65,7 +151,7 @@ body {
 
 .title2 {
   text-align: center;
-  font-family: Source Code Pro, monospace;
+  font-family: Source Code Pro;
   font-size: 15px;
   margin: 20px 0;
   font-weight: 500;
@@ -184,9 +270,8 @@ body.no-scroll {
 .overlay h1 {
   text-align: center;
   font-size: 15.5px;
-  font-family: Source Code Pro, monospace;
+  font-family: Source Code Pro;
   font-weight: 400;
-  animation: popup 0.3s ease-in-out;
 }
 
 .controls {

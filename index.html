@@ -59,11 +59,30 @@
             <a href="https://liba.lol/" style="font-size: 16px;">- liba</a><br>
             <a href="https://epok.hu/" style="font-size: 16px;">- epok website</a><br>
             <a href="./gs" style="font-size: 16px;">- gamesense</a><br>
-            <a href="/matrix" style="font-size: 16px;">- matrix raincode</a><br>
             <a href="https://steamcommunity.com/groups/reallyepok" style="font-size: 16px;">- steam group</a><br>
-            <a href="https://markie.lol/" style="font-size: 16px;">- second web</a><br>
+            <h1 style="text-align: center;">Socials</h1>
+            <a href="https://steamcommunity.com/id/cshmark/" style="font-size: 16px;">- steam</a><br>
+            <a href="https://github.com/markie1111" style="font-size: 16px;">- github</a><br>
+            <a href="https://markie.lol/" style="font-size: 16px;">- 2nd web</a><br>
         </div>
     </div>
+    <!-- terminal -->
+    <div id="terminal-window">
+        <div id="title-bar" style="border-bottom: #424242 1px solid; cursor: default;">
+          <span id="title">cshmark.xyz</span>
+        </div>
+        <div id="terminal">
+          <div id="output" style="border-bottom: #424242 1px solid;">
+            <p>> welcome to <span class="hatalmasfasz">cshmark.xyz</span>!</p>
+            <p style="color: gray;">// You can execute commands through the command line below</p>
+            <p style="color: gray;">// You can see the list of commands, by typing 'help'</p>
+          </div>
+          <div id="input-line">
+            <span style="user-select: none; cursor: default;">></span>
+            <input type="text" id="command-input" autocomplete="off">
+          </div>
+        </div>
+      </div>
     <!-- control buttons -->
     <div class="controls">
         <div class="control">
@@ -84,19 +103,23 @@
     <script src="js/rain.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/oneko.js"></script>
+    <script src="js/terminal.js"></script>
+    <script src="js/commands.js"></script>
+    <script src="js/scrambletitletext.js"></script>
     <script>
         var audio = new Audio('./song.mp3');
         audio.volume = .2;
         audio.loop = true;
         document.getElementById('overlay').addEventListener('click', function () {
             this.classList.add('fade-out');
+            document.getElementById('terminal-window').classList.add('visible');
             document.body.classList.remove('no-scroll');
 
             audio.play();
 
             new Typed('#typed', {
-                strings: ["welcome.", "this web is made by cshmark, llb, and sarkydev :3", "certified radal fan",
-                    "song name: iblistrigger - anthaal.", "also check out the bookmarks", "2k18 my beloved", "otcv2 on top"],
+                strings: ["welcome.", "this web is made by cshmark, llb, and sarkydev :3", "you can use the terminal down below",
+                    "song name: iblistrigger - anthaal.", "also check out the bookmarks", "2k18 my beloved"],
                 typeSpeed: 25,
                 backSpeed: 10,
                 backDelay: 2000,
@@ -114,7 +137,7 @@
 
         document.addEventListener("DOMContentLoaded", (e) => {
             if (window.screen.width < 768) {
-                alert("look who doesnt have a pc LMFAOOOOOOO");
+                window.location.href = "https://www.amazon.com/cheap-gaming-pc/s?k=cheap+gaming+pc";
             }
         });
 
