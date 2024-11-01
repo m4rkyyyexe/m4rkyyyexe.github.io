@@ -18,6 +18,7 @@
 - **Rain & Music Toggles** – Personalize your experience with ambient rain and music.
 - **Bookmarks Section** – Links to favorite sites, including projects and community pages.
 - **Typing Animation** – Custom messages greet you upon entry.
+- **Rainbow Oneko** – Cute little color-changing cat that follows your mouse.
 
 ## Tech Stack
 - **HTML/CSS** – Core structure and styling.
