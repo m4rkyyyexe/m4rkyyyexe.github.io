@@ -1,7 +1,7 @@
 <div id="user-content-toc">
   <ul align="center">
     <summary>
-    <h1>cshmark.xyz ✨</h1>
+    <h1>✨ cshmark.xyz ✨</h1>
     </summary>
   </ul>
 </div>
