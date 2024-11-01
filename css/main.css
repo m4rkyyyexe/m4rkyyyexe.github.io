@@ -36,6 +36,12 @@ body {
   user-select: none;
 }
 
+@keyframes popup {
+    0% { transform: scale(0); opacity: 0; }
+    80% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -59,7 +65,7 @@ body {
 
 .title2 {
   text-align: center;
-  font-family: Source Code Pro;
+  font-family: Source Code Pro, monospace;
   font-size: 15px;
   margin: 20px 0;
   font-weight: 500;
@@ -178,8 +184,9 @@ body.no-scroll {
 .overlay h1 {
   text-align: center;
   font-size: 15.5px;
-  font-family: Source Code Pro;
+  font-family: Source Code Pro, monospace;
   font-weight: 400;
+  animation: popup 0.3s ease-in-out;
 }
 
 .controls {
