@@ -1,2 +1,2 @@
 # markie1111.github.io
-website
+i'll make a readme later i'm tired
