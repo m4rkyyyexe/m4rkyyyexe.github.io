@@ -8,13 +8,6 @@ const cmds = {
     whoami: fetchuserinfo,
     visits: uservisits,
     rsvisit: rsv,
-    devmode: devmodeenable,
-    visitormode: visitmodeenable,
-    echo: echo,
-    cat: cat,
-    ls: list_files,
-    dir: list_files,
-    del: delete_file,
     aboutme: aboutme,
     reboot: reboot,
   };
@@ -96,26 +89,6 @@ const cmds = {
     display_output('> your visit count has been reset to 1');
   }
   
-  function devmodeenable() {
-    if (!developer_mode) {
-      developer_mode = true;
-      localStorage.setItem('mode', 'developer');
-      display_output('> activated DEVELOPER MODE');
-    } else {
-      display_output('> DEVELOPER MODE already activated');
-    }
-  }
-  
-  function visitmodeenable() {
-    if (developer_mode) {
-      developer_mode = false;
-      localStorage.setItem('mode', 'visitor');
-      display_output('> activated VISITOR MODE');
-    } else {
-      display_output('> VISITOR MODE already activated');
-    }
-  }
-  
   function reboot() {
     display_output('> rebooting...');
     setTimeout(() => {
@@ -130,8 +103,6 @@ const cmds = {
   }
   
   localStorage.setItem('visitcount', parseInt(localStorage.getItem('visitcount')) + 1);
-  
-  let developer_mode = localStorage.getItem('mode') === 'developer';
   
   function calculate_age() {
     const birth = new Date('2009-06-11T00:00:00');
@@ -150,8 +121,8 @@ const cmds = {
   }
   
   const OSver = 'v0.1';
-  const latestupdateszar = '2024. 08. 27. 1:25AM';
-  const latest_major_update = new Date('2024-08-27T01:26:00').getTime();
+  const latestupdateszar = '2024. 11. 03. 7:09PM';
+  const latest_major_update = new Date('2024-11-03T19:09:00').getTime();
   
   function calculate_major() {
     const now = Date.now();
@@ -164,66 +135,3 @@ const cmds = {
     return `${days} days, ${hours} hours, ${minutes} minutes`;
   }
   
-  function echo(command) {
-    const parts = command.split(/>\s*/);
-    if (parts.length !== 2) {
-      display_output('> invalid echo command');
-      return;
-    }
-    const text = parts[0].trim();
-    const filename = parts[1].trim();
-    if (!filename) {
-      display_output('> missing filename');
-      return;
-    }
-    localStorage.setItem(filename, text);
-    display_output(`> saved text to \'${filename}\'`);
-  }
-  
-  function cat(command) {
-    const parts = command.split(' ');
-    const filename = parts.slice(1).join(' ').trim();
-    if (!filename) {
-      display_output('> missing filename');
-      return;
-    }
-    const filecontent = localStorage.getItem(filename);
-    if (filecontent) {
-      display_output(`> \'${filename}\': ${filecontent}`);
-    } else {
-      display_output(`> \'${filename}\' not found`);
-    }
-  }
-  
-  function list_files() {
-    display_output('> listing files in storage:');
-    if (localStorage.length === 0) {
-      display_output('> no files found');
-      return;
-    }
-  
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      display_output(`> ${key}`);
-    }
-  }
-  
-  function delete_file(command) {
-    const parts = command.split(' ');
-    const filename = parts.slice(1).join(' ').trim();
-    if (!filename) {
-      display_output('> missing filename');
-      return;
-    }
-    if (filename === 'visitcount' || filename === 'mode') {
-      display_output('> nice try motherfucker');
-      return;
-    }
-    const filecontent = localStorage.getItem(filename);
-    if (filecontent) {
-      localStorage.removeItem(filename);
-      display_output(`> \'${filename}\' has been deleted`);
-    } else {
-      display_output(`> \'${filename}\' not found`);
-    }
-  }
