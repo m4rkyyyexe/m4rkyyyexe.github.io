@@ -36,32 +36,6 @@ body {
   user-select: none;
 }
 
-@keyframes kurvanyad {
-  0% {
-    color: rgb(255, 0, 0);
-  }
-
-  25% {
-    color: rgb(128, 255, 0);
-  }
-
-  50% {
-    color: rgb(0, 255, 255);
-  }
-
-  75% {
-    color: rgb(128, 0, 255);
-  }
-
-  100% {
-    color: rgb(255, 0, 0);
-  }
-}
-
-.hatalmasfasz {
-  animation: kurvanyad 3s linear infinite;
-}
-
 #terminal-window {
   width: 625px;
   height: 320px;
@@ -75,6 +49,7 @@ body {
   position: relative;
   margin: 20px auto;
   margin-bottom: 100px;
+  background-color: #000000;
 }
 
 #terminal-window.visible {
@@ -103,6 +78,12 @@ body {
   display: flex;
   flex-direction: column;
   height: calc(100% - 30px);
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #output {
@@ -325,6 +306,7 @@ body.no-scroll {
 
 div#oneko {
   animation: rainbow 2s ease-in infinite;
+  z-index: 1;
 }
 
 @keyframes rainbow {
@@ -337,99 +319,55 @@ div#oneko {
   }
 }
 
-.rain {
-  overflow: hidden;
-  position: absolute;
+.rain-container {
+  position: fixed; 
+  top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  z-index: -99;
-}
-
-.rain.back-row {
-  display: none;
-  z-index: -100;
-  height: 100vh;
-  width: 100vw;
-  opacity: 0.5;
-}
-
-.drop {
-  position: absolute;
-  width: 15px;
-  height: 150px;
-  pointer-events: none;
-  animation: drop 0.5s linear infinite;
-}
-
-@keyframes drop {
-  0% {
-    transform: translateY(0vh);
-  }
-
-  75% {
-    transform: translateY(90vh);
-  }
-
-  100% {
-    transform: translateY(90vh);
-  }
-}
-
-.stem {
-  width: 1px;
   height: 100%;
-  margin-left: 7px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
-  animation: stem 0.8s linear infinite;
+  pointer-events: none; 
+  z-index: -98; 
 }
 
-@keyframes stem {
+.raindrop {
+  position: absolute;
+  width: 2px; 
+  height: 30px; 
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50% 50% 0 0; 
+  transform: rotate(0deg);
+  animation: fall linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes fall {
   0% {
-    opacity: 1;
+    transform: translateY(-100vh);
+    opacity: 0.7;
   }
-
-  65% {
-    opacity: 1;
-  }
-
-  75% {
-    opacity: 0;
-  }
-
   100% {
+    transform: translateY(100vh);
     opacity: 0;
   }
 }
 
-.splat {
-  width: 15px;
-  height: 10px;
-  border-top: 2px dotted rgba(255, 255, 255, 0.5);
+.splash {
+  position: absolute;
+  width: 5px;
+  height: 2px;
   border-radius: 50%;
-  opacity: 1;
-  transform: scale(0);
-  animation: splat 0.5s linear infinite;
+  background: rgba(255, 255, 255, 0.5);
+  animation: splash-animation 0.3s ease-out;
+  opacity: 0;
 }
 
-@keyframes splat {
+@keyframes splash-animation {
   0% {
-    opacity: 1;
-    transform: scale(0);
+    transform: scale(0.1);
+    opacity: 0.9;
   }
-
-  80% {
-    opacity: 1;
-    transform: scale(0);
-  }
-
-  90% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-
   100% {
-    opacity: 0;
     transform: scale(1.5);
+    opacity: 0;
   }
 }

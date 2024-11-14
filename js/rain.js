@@ -1,20 +1,38 @@
-var makeItRain = function() {
-  $('.rain').empty();
+const rainContainer = document.querySelector('.rain-container');
+const numberOfDrops = 150;
 
-  var increment = 0;
-  var drops = "";
-  var backDrops = "";
+for (let i = 0; i < numberOfDrops; i++) {
+  const raindrop = document.createElement('div');
+  raindrop.classList.add('raindrop');
 
-  while (increment < 100) {
-    var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
-    var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
-    increment += randoFiver;
-    drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
-    backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
-  }
+  raindrop.style.left = `${Math.random() * 100}vw`;
 
-  $('.rain.front-row').append(drops);
-  $('.rain.back-row').append(backDrops);
+  const size = Math.random() * 0.5 + 0.5; 
+  raindrop.style.transform = `scale(${size})`; 
+
+  raindrop.style.animationDuration = `${Math.random() * 2 + 1}s`;
+  raindrop.style.animationDelay = `-${Math.random() * 2}s`;
+
+  rainContainer.appendChild(raindrop);
+
+  raindrop.addEventListener('animationiteration', () => {
+    createSplash(raindrop);
+  });
 }
 
-makeItRain();
+function createSplash(raindrop) {
+  const splash = document.createElement('div');
+  splash.classList.add('splash');
+
+  const dropX = raindrop.style.left;
+  const dropY = window.innerHeight; 
+  
+  splash.style.left = dropX;
+  splash.style.top = `${dropY - 5}px`; 
+
+  rainContainer.appendChild(splash);
+
+  setTimeout(() => {
+    splash.remove();
+  }, 300); 
+}

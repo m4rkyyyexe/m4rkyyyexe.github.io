@@ -1,10 +1,10 @@
 const output_div = document.getElementById('output');
 const input_field = document.getElementById('command-input');
 
-function rozsaszinfasz(text) {
+function sargageci(text) {
   const span = document.createElement('span');
   span.textContent = text;
-  span.style.color = 'pink';
+  span.style.color = 'yellow';
   return span;
 }
 
@@ -13,8 +13,8 @@ function display_output(message, is_user_input = false) {
   const message_array = message.split(' ');
 
   message_array.forEach((word, index) => {
-    if (index === 0 && (word.startsWith('developer@cshmark.xyz:') || word.startsWith('visitor@cshmark.xyz:'))) {
-      const prompt_span = rozsaszinfasz(word);
+    if (index === 0 && (word.startsWith('visitor@cshmark.xyz:'))) {
+      const prompt_span = sargageci(word);
       p.appendChild(prompt_span);
       p.appendChild(document.createTextNode(' '));
     } else if (word.startsWith('http')) {
@@ -66,12 +66,8 @@ input_field.addEventListener('keydown', (event) => {
     if (command === '') {
       return;
     }
-    display_output((developer_mode ? 'developer@cshmark.xyz: ' : 'visitor@cshmark.xyz: ') + command, true);
+    display_output('visitor@cshmark.xyz: ' + command, true);
     execute_command(command);
     input_field.value = '';
   }
-});
-
-window.addEventListener('load', () => {
-  developer_mode = localStorage.getItem('mode') === 'developer';
 });
