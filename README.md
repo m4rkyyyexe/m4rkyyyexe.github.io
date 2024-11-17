@@ -34,6 +34,6 @@ open index.html
 ```
 
 ## Contributors
-[chlkrisz](https://github.com/chlkrisz) - [README.md](README.md), toggles on site
+[chlkrisz](https://github.com/chlkrisz) - [README.md](README.md), toggles on site, and the rainbow oneko
 
-[sarkydev](https://github.com/sarkydev) - CSS fixes
+[sarkydev](https://github.com/sarkydev) - CSS fixes, style updates
