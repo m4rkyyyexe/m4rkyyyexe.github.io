@@ -25,6 +25,14 @@
 - **JavaScript** – Interactive elements and animations.
 - **Typed.js** – Smooth text animations.
 
+## History of the site
+- The first version of the site was made in April, 2024 by. Mark.
+- The first host for it was netlify.
+- The first domain for it was MARKIE.XYZ.
+- Then, the site was continued to get hosted here on GitHub.
+- The new domain for the site is CSHMARK.XYZ.
+- Then, chlkrisz & sarkydev joined to help Mark continue developing the site.
+
 ## Deployment
 To clone and view this project locally:
 ```bash
