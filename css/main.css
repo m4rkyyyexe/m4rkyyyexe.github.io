@@ -36,6 +36,17 @@ body {
   user-select: none;
 }
 
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.title-container img {
+  animation: rainbow 10s ease-in infinite;
+}
+
 #terminal-window {
   width: 625px;
   height: 320px;
