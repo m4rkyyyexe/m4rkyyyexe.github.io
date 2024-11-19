@@ -7,9 +7,7 @@ const cmds = {
   cls: cls,
   whoami: fetchuserinfo,
   visits: uservisits,
-  rsvisit: rsv,
   aboutme: aboutme,
-  reboot: reboot,
 };
 
 // meow
@@ -84,11 +82,6 @@ function uservisits() {
   display_output(`> your visit count: ${visit_count}`);
 }
 
-function rsv() {
-  localStorage.setItem('visitcount', 1);
-  display_output('> your visit count has been reset to 1');
-}
-
 function reboot() {
   display_output('> rebooting...');
   setTimeout(() => {
@@ -121,8 +114,8 @@ function calculate_age() {
 }
 
 const OSver = 'v0.1';
-const latestupdateszar = '2024. 11. 03. 7:09PM';
-const latest_major_update = new Date('2024-11-03T19:09:00').getTime();
+const latestupdateszar = '2024. 11. 19. 5:53PM';
+const latest_major_update = new Date('2024-11-19T17:53:56').getTime();
 
 function calculate_major() {
   const now = Date.now();
