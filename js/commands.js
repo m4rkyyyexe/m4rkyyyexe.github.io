@@ -32,7 +32,7 @@ function aboutme() {
   const gender = 'Boy';
   const age = calculate_age();
   const nationality = 'Hungarian';
-  const coding = 'HTML, CSS, JS';
+  const coding = 'HTML, CSS, JS, LUA, C';
   const website = 'https://cshmark.xyz/ (you\'re here)'
 
   display_output(`> Name: ${name}`);
