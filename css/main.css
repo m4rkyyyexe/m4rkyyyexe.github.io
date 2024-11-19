@@ -132,6 +132,44 @@ canvas {
   background-color: #333333;
 }
 
+#killfeed {
+  position: fixed;
+  top: 30%;
+  left: 10px;
+  background-color: rgba(0, 0, 0);
+  border: 2px solid #191919;
+  border-radius: 7px;
+  padding: 5px 15px;
+  font-family: 'Handlee';
+  font-size: 20px;
+  color: #d30000;
+  font-weight: 900;
+}
+
+#killfeed2 {
+  position: fixed;
+  top: 36%;
+  left: 10px;
+  background-color: rgba(0, 0, 0);
+  border: 2px solid #191919;
+  border-radius: 7px;
+  padding: 5px 15px;
+  font-family: 'Handlee';
+  font-size: 20px;
+  color: #d30000;
+  font-weight: 900;
+}
+
+#killfeed p {
+  margin: 0;
+  text-align: left;
+}
+
+#killfeed2 p {
+  margin: 0;
+  text-align: left;
+}
+
 .title {
   text-align: center;
   font-size: 100px;
