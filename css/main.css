@@ -36,6 +36,17 @@ body {
   user-select: none;
 }
 
+.fps {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-family: 'Source Code Pro', monospace;
+    color: #ffffff;
+    font-size: 14px;
+    z-index: 2;
+    opacity: 0.75;
+}
+
 .title-container {
   display: flex;
   align-items: center;
