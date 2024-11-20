@@ -159,7 +159,7 @@
         function tick() {
             var time = Date.now();
             frame++;
-            fpsValue = (1000 / (time - lastTime)).toFixed(1);
+            fpsValue = Math.floor(1000 / (time - lastTime));
             lastTime = time;
             window.requestAnimationFrame(tick);
         }
@@ -169,7 +169,7 @@
         }
         
         tick();
-        setInterval(updateFPSDisplay, 10);
+        setInterval(updateFPSDisplay, 50);
     </script>
 
 </body>
