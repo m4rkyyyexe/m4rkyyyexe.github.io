@@ -37,14 +37,13 @@ body {
 }
 
 .fps {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    font-family: 'Source Code Pro', monospace;
-    color: yellow;
-    font-size: 14px;
-    z-index: 2;
-    opacity: 0.75;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-family: 'Handlee', monospace;
+  font-size: 20px;
+  color: #ffff00;
+  font-weight: 900;
 }
 
 .title-container {
@@ -102,12 +101,6 @@ body {
   height: calc(100% - 30px);
 }
 
-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 #output {
   overflow-y: auto;
   flex-grow: 1;
@@ -123,7 +116,7 @@ canvas {
 #input-line input {
   background-color: transparent;
   border: none;
-  color: var(--textcolor);
+  color: #ffff;
   font-size: 12px;
   margin-left: 5px;
   outline: none;
@@ -204,7 +197,6 @@ canvas {
   pointer-events: none;
   animation: rainbow .5s ease-in infinite;
 }
-
 
 .container3 {
   flex: 1 1 400px;
