@@ -146,13 +146,13 @@ body {
   padding: 5px 15px;
   font-family: 'Handlee';
   font-size: 20px;
-  color: #ffff00;
   font-weight: 900;
 }
 
 #killfeed p {
   margin: 0;
   text-align: left;
+  color: #ffff00;
 }
 
 .title {
