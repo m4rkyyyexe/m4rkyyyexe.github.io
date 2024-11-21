@@ -1,3 +1,5 @@
+// im bored so im just putting comments everywhere to piss u off :D
+
 const rainContainer = document.querySelector('.rain-container');
 const numberOfDrops = 150;
 
@@ -36,3 +38,5 @@ function createSplash(raindrop) {
     splash.remove();
   }, 300); 
 }
+
+// ur ugly
