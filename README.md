@@ -42,6 +42,10 @@ open index.html
 ```
 
 ## Contributors
-[chlkrisz](https://github.com/chlkrisz) - [README.md](README.md), toggles on site, and the rainbow oneko
+[chlkrisz](https://github.com/chlkrisz) - the first [README.md](README.md), toggles on site, and the rainbow oneko
 
-[sarkydev](https://github.com/sarkydev) - CSS fixes, style updates
+[sarkydev](https://github.com/sarkydev) - CSS fixes, style updates 
+
+## Quick reminder:
+
+The whole src is filled up with mostly useless comments that were made cuz i was bored lol
