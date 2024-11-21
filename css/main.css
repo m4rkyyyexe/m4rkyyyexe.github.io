@@ -36,7 +36,7 @@ body {
   user-select: none;
 }
 
-.fps {
+#fps {
   position: fixed;
   top: 10px;
   left: 10px;
