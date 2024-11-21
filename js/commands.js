@@ -25,20 +25,15 @@ function execute_command(command) {
 
 // functions
 
-function aboutme() {
-  const name = 'Mark';
-  const gender = 'Boy';
+function aboutme() {
   const age = calculate_age();
-  const nationality = 'Hungarian';
-  const coding = 'HTML, CSS, JS, LUA, C';
-  const website = 'https://cshmark.xyz/ (you\'re here)'
 
-  display_output(`> Name: ${name}`);
-  display_output(`> Gender: ${gender}`);
+  display_output(`> Name: Mark`);
+  display_output(`> Gender: Boy`);
   display_output(`> Age: ${age}`);
-  display_output(`> Nationality: ${nationality}`);
-  display_output(`> Coding: ${coding}`);
-  display_output(`> Website: ${website}`)
+  display_output(`> Nationality: Hungarian`);
+  display_output(`> Coding: HTML, CSS, JS, LUA, C`);
+  display_output(`> Bio Page: https://markie.lol/`)
 }
 
 function displaycmd() {
