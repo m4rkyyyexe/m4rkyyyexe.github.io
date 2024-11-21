@@ -1,3 +1,5 @@
+// this whole idea of the terminal title being glitched came to my mind when i took a huge massive shit
+
 function scrambletext(text) {
     const arr = text.split('');
     for (let i = arr.length - 1; i > 0; i--) {
