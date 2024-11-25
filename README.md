@@ -31,7 +31,7 @@
 - The first domain for it was MARKIE.XYZ.
 - Then, the site was continued to get hosted here on GitHub.
 - The new domain for the site is CSHMARK.XYZ.
-- Then, chlkrisz & sarkydev joined to help Mark continue developing the site.
+- Then, chlkrisz (aka. liba/llb) & sarkydev joined to help Mark continue developing the site.
 
 ## Deployment
 To clone and view this project locally:
