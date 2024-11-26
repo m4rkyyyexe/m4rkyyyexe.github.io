@@ -6,42 +6,56 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    
     <!-- font, rain, css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
     <!-- embed & stuff -->
     <meta name="og:title" content="cshmark">
     <meta name="og:description" content="lmao">
     <meta name="og:image"
         content="https://cdn.discordapp.com/attachments/1254481908797276172/1299688586110832713/km_20241026_240p_12f_20241026_025927.gif?ex=671e1cd1&is=671ccb51&hm=b402abec979b1e95986880362c7148792f6485c1f63d08d9214e8b7e5476d3bb&">
     <meta name="theme-color" content="#fc6fbc">
+    
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
 </head>
 
 <body>
+    
     <!-- cte page -->
     <div id="overlay" class="overlay">
         <h1>click anywhere to enter</h1>
     </div>
+    
     <!-- main -->
     <div class="rain-container"></div>
+    
     <span id="fps"></span>
+    
     <div class="title-container">
         <img src="/assets/smile.png" width="80px">
         <h1 class="title">SIXT<span style="animation: ezmi 0.01s ease infinite">H</span></h1>
         <img src="/assets/smile.png" width="80px">
     </div>
+    
     <h1 class="title2">> <span id="typed"></span></h1>
+    
     <div id="killfeed">
         <p>sixth killed curri</p>
     </div>
+    
     <div class="container">
         <div class="container3">
             <div class="category">
@@ -53,6 +67,7 @@
                 </div>
                 <p>- I've been making websites because of fun since around March, 2023</p>
                 <p>- I have three dogs and a cat :3</p>
+                <p>- I main left 4 dead 2 in 2024 (average last human on earth enjoyer)</p>
                 <p>- I was interested in drawing back then, but I got bored of it, so I just continued coding lol</p>
                 <p>- I am a Catholic-Christian!</p>
                 <p>- The Languages that I speak are:</p>
@@ -69,11 +84,12 @@
                 <p>I hope you like my website :3</p>
             </div>
         </div>
+        
         <div class="container2">
             <h1 style="text-align: center;">BOOKMARKS</h1>
             <a href="https://lajos.lol" style="font-size: 16px;">- ?</a><br>
             <a href="https://epok.hu/" style="font-size: 16px;">- epok website</a><br>
-            <a href="https://discord.gg/BjpjF4jVDe" style="font-size: 16px;">- eleventh</a><br>
+            <a href="https://discord.gg/BjpjF4jVDe" style="font-size: 16px;">- eleventh</a><br> <!-- discord server with a bridge chat to make sure it doesnt die lol -->
             <a href="https://steamcommunity.com/groups/faszosciganyok" style="font-size: 16px;">- steam group</a><br>
             <a href="https://steamcommunity.com/groups/heizeland" style="font-size: 16px;">- heizemod</a><br>
             <h1 style="text-align: center;">SOCIALS</h1>
@@ -95,24 +111,31 @@
             <p style="font-size: 16px;">- raw input</p>
             <p style="font-size: 16px;">- mouse acc. 1.00</p>
         </div>
+        
     </div>
+    
     <!-- terminal -->
     <div id="terminal-window">
         <div id="title-bar" style="border-bottom: #424242 1px solid; cursor: default;">
           <span id="title">cshmark.xyz</span>
         </div>
+        
         <div id="terminal">
           <div id="output" style="border-bottom: #424242 1px solid;">
             <p>> welcome to <span style="color: yellow;">cshmark.xyz</span>!</p>
             <p style="color: gray;">// You can execute commands through the command line below</p>
             <p style="color: gray;">// You can see the list of commands, by typing 'help'</p>
           </div>
+            
           <div id="input-line">
             <span style="user-select: none; cursor: default;">></span>
             <input type="text" id="command-input" autocomplete="off">
           </div>
+            
         </div>
+        
       </div>
+    
     <!-- control buttons -->
     <div class="controls">
         <div class="control">
@@ -122,6 +145,7 @@
             </label>
         </div>
     </div>
+    
     <!-- javascript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/rain.js"></script>
@@ -130,6 +154,7 @@
     <script src="js/terminal.js"></script>
     <script src="js/commands.js"></script>
     <script src="js/scrambletitletext.js"></script>
+    
     <script>
         var audio = new Audio('./song.mp3');
         audio.volume = .2;
