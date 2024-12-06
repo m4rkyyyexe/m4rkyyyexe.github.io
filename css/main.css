@@ -29,6 +29,7 @@ body {
   font-family: "ＭＳ Ｐゴシック";
   color: #f0f0f0;
   background-color: #000000;
+  user-select: none;
 }
 
 #fps {
@@ -39,7 +40,6 @@ body {
   font-size: 20px;
   color: #ffff00;
   font-weight: 900;
-  user-select: none;
 }
 
 .title-container {
@@ -47,7 +47,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  user-select: none;
+
 }
 
 .title-container img {
@@ -70,13 +70,6 @@ body {
   background-color: #000000;
 }
 
-/* nvm */
-
-#terminal-window ::selection {
-  background-color: #ffffff70;
-  color: white;
-}
-
 #terminal-window.visible {
   opacity: 1;
 }
@@ -90,14 +83,12 @@ body {
   align-items: center;
   font-size: 14px;
   position: relative;
-  user-select: none;
 }
 
 #title-bar #title {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  user-select: none;
 }
 
 #terminal {
@@ -152,7 +143,6 @@ body {
   font-family: 'Handlee';
   font-size: 20px;
   font-weight: 900;
-  user-select: none;
 }
 
 #killfeed p {
@@ -177,7 +167,6 @@ body {
   margin: 20px 0;
   font-weight: 500;
   color: #b8b8b8;
-  user-select: none;
 }
 
 .container {
@@ -293,7 +282,6 @@ body.no-scroll {
   font-size: 15.5px;
   font-family: Source Code Pro;
   font-weight: 400;
-  cursor: text;
 }
 
 .controls {
@@ -412,9 +400,4 @@ div#oneko {
     transform: scale(1.5);
     opacity: 0;
   }
-}
-
-::selection {
-  background-color: orange;
-  color: black;
 }
