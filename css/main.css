@@ -70,6 +70,11 @@ body {
   background-color: #000000;
 }
 
+/* this is for the yellow texts in the terminal */
+.useless ::selection {
+  color: yellow;
+}
+
 #terminal-window ::selection {
   background-color: #ffffff70;
   color: white;
