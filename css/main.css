@@ -20,6 +20,8 @@
   }
 }
 
+@import('https://fonts.googleapis.com/icon?family=Fira+Mono');
+
 * {
   box-sizing: border-box;
 }
@@ -63,7 +65,7 @@ body {
   align-content: center;
   opacity: 0;
   transition: opacity 0.5s ease;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Fira Mono', 'Source Code Pro', monospace;
   position: relative;
   margin: 20px auto;
   margin-bottom: 100px;
@@ -162,7 +164,7 @@ body {
 
 .title2 {
   text-align: center;
-  font-family: Source Code Pro;
+  font-family: 'Fira Mono', 'Source Code Pro', monospace;
   font-size: 15px;
   margin: 20px 0;
   font-weight: 500;
@@ -277,11 +279,16 @@ body.no-scroll {
   overflow: hidden;
 }
 
-.overlay h1 {
-  text-align: center;
-  font-size: 15.5px;
-  font-family: Source Code Pro;
-  font-weight: 400;
+.overlay p {
+    text-align: center;
+    font-size: 17px;
+    font-family: var(--font2);
+    font-weight: 100;
+    transition: 0.5s;
+}
+
+.overlay p:hover {
+    letter-spacing: 3px;
 }
 
 .controls {
