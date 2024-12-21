@@ -25,7 +25,8 @@ function execute_command(command) {
 
 // functions
 
-function aboutme() {
+function aboutme() {
+
   const age = calculate_age();
 
   display_output(`> Name: Mark`);
@@ -46,7 +47,6 @@ function displaycmd() {
 
 function fetchsysteminfo() {
   display_output(`> OS: cshmark.xyz ${OSver}`);
-  display_output(`> latest terminal update: ${latestupdateszar}`);
   display_output(`> latest major terminal update since ${calculate_major()}`);
 }
 
@@ -109,7 +109,6 @@ function calculate_age() {
 }
 
 const OSver = 'v0.1';
-const latestupdateszar = '2024. 11. 19. 5:53PM';
 const latest_major_update = new Date('2024-11-19T17:53:56').getTime();
 
 function calculate_major() {
