@@ -285,7 +285,6 @@ body.no-scroll {
     font-size: 20px;
     font-family: 'Fira Mono', 'Source Code Pro', monospace;
     font-weight: 200;
-    cursor: pointer;
 }
 
 .overlay:hover {
