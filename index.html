@@ -131,9 +131,6 @@
     <script src="js/rain.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/oneko.js"></script>
-    <script src="js/terminal.js"></script>
-    <script src="js/commands.js"></script>
-    <script src="js/scrambletitletext.js"></script>
     
     <script>
         var audio = new Audio('./song.mp3');
@@ -141,7 +138,6 @@
         audio.loop = true;
         document.getElementById('overlay').addEventListener('click', function () {
             this.classList.add('fade-out');
-            document.getElementById('terminal-window').classList.add('visible');
             document.body.classList.remove('no-scroll');
 
             audio.play();
