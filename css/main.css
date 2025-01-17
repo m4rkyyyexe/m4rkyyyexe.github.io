@@ -27,7 +27,7 @@
 
 body {
   margin: 0;
-  font-family: "ＭＳ Ｐゴシック";
+  font-family: "ＭＳ Ｐゴシック", "Source Code Pro", monospace;
   color: #f0f0f0;
   background-color: #000000;
   user-select: none;
@@ -37,7 +37,7 @@ body {
   position: fixed;
   top: 10px;
   left: 10px;
-  font-family: 'Segoe Print', monospace;
+  font-family: 'Segoe Print', sans-serif;
   font-size: 20px;
   color: #ffff00;
   font-weight: 900;
