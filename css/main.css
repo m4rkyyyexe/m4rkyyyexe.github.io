@@ -224,53 +224,6 @@ body.no-scroll {
     letter-spacing: 4px;
 }
 
-.controls {
-  display: flex;
-  gap: 20px;
-  position: fixed;
-  width: fit-content;
-  height: fit-content;
-  right: 0;
-  bottom: 0;
-  padding: 1rem;
-  opacity: .3;
-}
-
-.control input[type="checkbox"] {
-  display: none;
-}
-
-.control label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #f77;
-  transition: border-color 0.3s;
-  position: relative;
-}
-
-.control label i {
-  font-size: 24px;
-  transition: all 0.3s;
-  color: #f77;
-}
-
-.control input[type="checkbox"]:checked+label {
-  border-color: #fff;
-  color: #fff;
-}
-
-.control input[type="checkbox"]:checked+label i {
-  color: #fff;
-}
-
-.control input[type="checkbox"]:disabled+label {
-  border-color: #fff;
-}
-
 
 div#oneko {
   animation: rainbow 2s ease-in infinite;

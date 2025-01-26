@@ -53,7 +53,7 @@
     <h1 class="title2">> <span id="typed"></span></h1>
     
     <div id="killfeed">
-        <p>sixth owned xefy</p>
+        <p>l4d2 killfeed lolololo</p>
     </div>
     
     <div class="container">
@@ -111,18 +111,10 @@
             <p style="font-size: 16px;">- 5.6 sens</p>
             <p style="font-size: 16px;">- raw input</p>
             <p style="font-size: 16px;">- mouse acc. 1.00</p>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3414657816" style="font-size: 16px;">- addon collection</a><br>
         </div>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2YfgFki941HtcjnaVluvBa?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         
-    </div>
-    
-    <!-- control buttons -->
-    <div class="controls">
-        <div class="control">
-            <input type="checkbox" id="music" checked>
-            <label for="music">
-                <i class='bx bxs-music'></i>
-            </label>
-        </div>
     </div>
     
     <!-- javascript -->
@@ -132,18 +124,14 @@
     <script src="js/oneko.js"></script>
     
     <script>
-        var audio = new Audio('./song.mp3');
-        audio.volume = .2;
-        audio.loop = true;
         document.getElementById('overlay').addEventListener('click', function () {
             this.classList.add('fade-out');
             document.body.classList.remove('no-scroll');
 
-            audio.play();
 
             new Typed('#typed', {
                 strings: ["welcome.", "this web is made by sixth, llb, and sarkydev :3", "the terminal has been removed because its ass",
-                    "song name: nicopatty - stepback", "also check out the bookmarks", "2k18 my beloved"],
+                    "the bg music is now my playlist on spotify lol", "also pls check out the bookmarks", "l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2"],
                 typeSpeed: 25,
                 backSpeed: 10,
                 backDelay: 2000,
@@ -158,13 +146,6 @@
         document.addEventListener("DOMContentLoaded", function () {
             document.body.classList.add('no-scroll');
         });
-
-        var musicToggle = document.getElementById('music');
-
-        musicToggle.addEventListener('click', () => {
-            if (musicToggle.checked) audio.play();
-            else audio.pause();
-        })
 
         document.addEventListener('dragstart', event => event.preventDefault());
         const images = document.getElementsByTagName('img');
@@ -189,7 +170,7 @@
         }
         
         tick();
-        setInterval(updateFPSDisplay, 50);
+        setInterval(updateFPSDisplay, 100);
     </script>
 
 </body>
