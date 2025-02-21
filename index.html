@@ -125,9 +125,14 @@
     <script src="js/oneko.js"></script>
     
     <script>
+        var audio = new Audio('./song.mp3');
+        audio.volume = .2;
+        audio.loop = true;
+        
         document.getElementById('overlay').addEventListener('click', function () {
             this.classList.add('fade-out');
             document.body.classList.remove('no-scroll');
+            audio.play();
 
 
             new Typed('#typed', {
