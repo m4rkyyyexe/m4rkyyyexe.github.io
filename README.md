@@ -36,8 +36,8 @@
 ## Deployment
 To clone and view this project locally:
 ```bash
-git clone https://github.com/6thnight/6thnight.github.io.git
-cd markie1111.github.io
+git clone https://github.com/bunnyhopenjoyer/bunnyhopenjoyer.github.io.git
+cd bunnyhopenjoyer.github.io
 open index.html
 ```
 
