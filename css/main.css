@@ -53,10 +53,6 @@ body {
 
 }
 
-.title-container img {
-  animation: rainbow 10s ease-in infinite;
-}
-
 ::-webkit-scrollbar {
   width: 8px;
 }
