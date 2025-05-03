@@ -35,6 +35,10 @@ body {
   user-select: none;
 }
 
+.title-container img {
+   z-index: -99;
+ }
+
 #fps {
   position: fixed;
   top: 10px;
