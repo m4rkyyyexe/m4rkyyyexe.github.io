@@ -11,8 +11,8 @@
 [🌐 Live Site](https://cshmark.xyz) • [📄 License (MIT)](LICENSE)
 
 <img src="assets/seperator.gif" width=100px alt="spinning Sniper">
-<img src="assets/pfp.gif" width=100px alt="spinning CT">
 <img src="assets/sigma.jpg" width=100px alt="me">
+<img src="assets/pfp.gif" width=100px alt="spinning CT">
 
 </div>
 
