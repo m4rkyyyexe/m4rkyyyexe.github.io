@@ -20,7 +20,7 @@
 - **Bookmarks Section** – Links to favorite sites, including projects and community pages.
 - **Typing Animation** – Custom messages greet you upon entry.
 - **Rainbow Oneko** – Cute little color-changing cat that follows your mouse.
-- **Terminal** – A cool-looking terminal with some basic features in it.
+- **room** – don't look at them.
 
 ## Tech Stack
 - **HTML/CSS** – Core structure and styling.
