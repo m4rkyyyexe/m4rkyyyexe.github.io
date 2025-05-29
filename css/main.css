@@ -89,7 +89,7 @@ body {
   width: 64px;
   height: 64px;
   z-index: 999;
-  opacity: 0.04;
+  opacity: 0.1;
 }
 
 #greydoor-link img {
