@@ -39,7 +39,7 @@
 To clone and view this project locally:
 ```bash
 git clone https://github.com/darkknightl4d2/darkknightl4d2.github.io.git
-cd bunnyhopenjoyer.github.io
+cd darkknightl4d2.github.io
 open index.html
 ```
 
