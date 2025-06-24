@@ -43,7 +43,7 @@ body {
   position: fixed;
   top: 10px;
   left: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Tahoma', sans-serif;
   font-size: 22px;
   color: #ffff00;
 }
@@ -76,7 +76,7 @@ body {
   border: 2px solid #191919;
   border-radius: 7px;
   padding: 5px 15px;
-  font-family: 'Montserrat', monospace;
+  font-family: 'Tahoma', sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
