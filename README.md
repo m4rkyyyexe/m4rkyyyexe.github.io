@@ -38,8 +38,8 @@
 ## Deployment
 To clone and view this project locally:
 ```bash
-git clone https://github.com/darkknightl4d2/darkknightl4d2.github.io.git
-cd darkknightl4d2.github.io
+git clone https://github.com/m4rkyyyexe.github.io/m4rkyyyexe.github.io.git
+cd m4rkyyyexe.github.io.github.io
 open index.html
 ```
 
