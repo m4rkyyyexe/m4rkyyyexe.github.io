@@ -139,8 +139,6 @@ body {
   padding: 10px;
   margin: 10px;
   max-width: 250px;
-  border: 2px solid #707070;
-  border-radius: 2px;
 }
 
 .profile-pic {
@@ -179,8 +177,6 @@ body {
   background-color: #000000;
   padding: 20px;
   margin: 10px 0;
-  border: 2px solid #707070;
-  border-radius: 2px;
 }
 
 .category h2 {
