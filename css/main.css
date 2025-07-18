@@ -132,10 +132,11 @@ body {
   justify-content: center;
   max-width: 1200px;
   margin: auto;
+  background-color: transparent;
 }
 
 .container2 {
-  background-color: #000000;
+  background-color: transparent;
   padding: 10px;
   margin: 10px;
   max-width: 250px;
@@ -153,6 +154,7 @@ body {
   margin: 10px;
   max-width: 450px;
   border-radius: 2px;
+  background-color: transparent;
 }
 
 .faszszopas img {
