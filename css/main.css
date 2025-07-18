@@ -154,7 +154,7 @@ body {
   margin: 10px;
   max-width: 450px;
   border-radius: 2px;
-  background-color: transparent;
+  z-index: -44234532324324; /* lofasz a seggedfve */
 }
 
 .faszszopas img {
