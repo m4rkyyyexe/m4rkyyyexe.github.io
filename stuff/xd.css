@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Sixtyfour;
+  background: url('YmFja2.jpg') no-repeat center center;
+  animation-duration: 0.01s;
+  animation-name: textflicker;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-size: cover;
+  color: #ccc;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+  text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+}
+
+.center-box {
+  text-align: center;
+  animation: floaty2 4s ease-in-out infinite;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  animation: floaty 3s ease-in-out infinite;
+  transition: color 0.2s ease;
+}
+
+.desc {
+  margin: 1rem 1rem 1rem;
+  font-size: 18px;
+  opacity: 0.8;
+  animation: floaty 3.3s ease-in-out infinite;
+}
+
+.socialfos a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #bdbdbd;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  transition: font-size 0.3s ease;
+}
+
+.socialfos a:hover {
+  color: #f07eff;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  z-index: 1001;
+  cursor: default;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay p {
+  text-align: center;
+  font-size: 18px;
+  font-family: Sixtyfour;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.overlay p:hover {
+  letter-spacing: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
+
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}
+
+@keyframes floaty {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floaty2 {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.rain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -98;
+}
+
+.raindrop {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50% 50% 0 0;
+  transform: rotate(0deg);
+  animation: fall linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.splash {
+  position: absolute;
+  width: 5px;
+  height: 2px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: splash-animation 0.3s ease-out;
+  opacity: 0;
+}
+
+@keyframes splash-animation {
+  0% {
+    transform: scale(0.1);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
