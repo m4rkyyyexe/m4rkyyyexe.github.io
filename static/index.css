@@ -1,0 +1,35 @@
+/* tylko biedronka nie na ogonka nie na ogonka biedronka */
+
+:root {
+    --text-color: #f1f1f1;
+    --link-color: #00ff9d;
+    --bg-color: #111111;
+}
+
+html,
+body {
+    background-color: var(--bg-color);
+    font-family: monospace;
+    user-select: none;
+    padding-left: 10px;
+    padding-top: 10px
+}
+
+.content h1 {
+    color: var(--text-color);
+    font-size: 38px;
+}
+
+.content h3 {
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+.content li {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.content a {
+    color: var(--link-color);
+}
