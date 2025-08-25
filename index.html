@@ -1,84 +1,48 @@
 <!doctype html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>m4rkyyy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stuff/xd.css">
-    <meta name="og:title" content="github.com/m4rkyyyexe">
-    <meta property="og:description" content="crazy nigga 2">
-    <meta property="theme-color" content="#a100b0">
+    <title>l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2l4d2</title>
+    <link rel="stylesheet" href="./static/index.css">
 </head>
-
 <body>
-    <div class="rain-container"></div>
-    <div id="overlay" class="overlay">
-        <p>click to enter</p>
-    </div>
-    <div class="center-box">
-        <h1>m4rkyyy</h1>
-        <p class="desc">aka. 𝓡age</p>
-        <div class="socialfos">
-            <a href="https://steamcommunity.com/id/stfunggrs" target="_blank">steam</a>
-            <a href="https://discord.gg/BjpjF4jVDe" target="_blank">discord</a>
-        </div>
+    <div class="content">
+        <h1>welcome</h1>
+        <h3>contact</h3>
+        <ul>
+            <li>discord: <a href="https://discord.com/users/1239317024086298678">m4rkyyyexe</a></li>
+            <li>server: <a href="https://dsc.gg/eleventh">11th</a></li>
+        </ul>
+        <h3>socials</h3>
+        <ul>
+            <!-- idk what to really put here since im not really active on anything kekek -->
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+            <li>steam: <a href="https://steamcommunity.com/id/stfunggrs">Dx Morgan</a></li>
+        </ul>
     </div>
 </body>
-
-<script>
-    var audio = new Audio('./stuff/song.mp3');
-    audio.volume = .2;
-    audio.loop = true;
-
-    document.getElementById('overlay').addEventListener('click', function () {
-        this.classList.add('fade-out');
-        document.body.classList.remove('no-scroll');
-        audio.play();
-    });
-
-    const rainContainer = document.querySelector('.rain-container');
-    const numberOfDrops = 150;
-
-    for (let i = 0; i < numberOfDrops; i++) {
-        const raindrop = document.createElement('div');
-        raindrop.classList.add('raindrop');
-
-        raindrop.style.left = `${Math.random() * 100}vw`;
-
-        const size = Math.random() * 0.5 + 0.5;
-        raindrop.style.transform = `scale(${size})`;
-
-        raindrop.style.animationDuration = `${Math.random() * 2 + 1}s`;
-        raindrop.style.animationDelay = `-${Math.random() * 2}s`;
-
-        rainContainer.appendChild(raindrop);
-
-        raindrop.addEventListener('animationiteration', () => {
-            createSplash(raindrop);
-        });
-    }
-
-    function createSplash(raindrop) {
-        const splash = document.createElement('div');
-        splash.classList.add('splash');
-
-        const dropX = raindrop.style.left;
-        const dropY = window.innerHeight;
-
-        splash.style.left = dropX;
-        splash.style.top = `${dropY - 5}px`;
-
-        rainContainer.appendChild(splash);
-
-        setTimeout(() => {
-            splash.remove();
-        }, 300);
-    }
-</script>
-
 </html>
-
